@@ -1,0 +1,106 @@
+/* quicksand-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/quicksand-v31-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/quicksand-v31-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/quicksand-v31-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/quicksand-v31-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/quicksand-v31-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/quicksand-v31-latin-regular.svg#Quicksand') format('svg'); /* Legacy iOS */
+}
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  height: 100%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.bg-image {
+  background-image: url("./images/cookies-2991174_1280.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+h1,
+#bg-text {
+  font-size:  clamp(1.75rem, 1.13rem + 3.10vw, 5rem);
+  padding: 0.75rem;
+  text-shadow: 0px 2px 4px #000000;
+}
+
+.bg-text-subline{
+  font-size: clamp(1.25rem, 0.82rem + 2.14vw, 3.5rem);
+  text-shadow: 0px 2px 4px #000000;
+}
+
+.bg-text-count{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+}
+
+.numbers {
+  display: flex;
+  font-size: clamp(1rem, 0.62rem + 1.90vw, 3rem);
+  padding: 1rem 1rem 0 1rem;
+}
+
+.letters {
+  display: flex;
+  font-size: clamp(0.75rem, 0.51rem + 1.19vw, 2rem);
+  text-shadow: 0px 2px 4px #000000;
+}
+
+.star-shaddow{
+  filter: drop-shadow(0.25rem 0.25rem 4px rgba(207,183,100, 0.8));
+}
+
+#days,
+#hours,
+#minutes,
+#seconds {
+  width: clamp(4rem, 2.48rem + 7.62vw, 12rem);
+  height: clamp(4rem, 2.48rem + 7.62vw, 12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+  background-color: rgba(207,183,100, 0.8);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.letters-item{
+  height: clamp(1rem, 0.62rem + 1.90vw, 3rem);
+  width: clamp(4rem, 2.48rem + 7.62vw, 12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+}
+
